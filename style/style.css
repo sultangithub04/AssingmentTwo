@@ -18,6 +18,9 @@ body{
     max-width: 1440px;
     box-sizing: border-box;
 }
+header{
+    background-image: linear-gradient(black white);
+}
 .common-width{
     max-width: 1060px;
     margin: 0 auto;
@@ -53,4 +56,64 @@ body{
 }
 .list-item>li>a:hover{
  background-color:#E6533C ;
+}
+.banner-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.banner-left>h1{
+    font-size: 78px;
+    color: white;
+    margin-bottom: 40px;
+}
+.btn-primary1{
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 16px;
+    margin: 25px 5px;
+    background-color:#E6533C ;
+
+}
+.btn-primary2{
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 16px;
+    border: 1px solid white;
+    margin: 25px 5px;
+
+}
+.banner-right img{
+    width: 100%;
+ 
+}
+.banner-right{
+    position: relative;
+}
+.round{
+
+    background-color: #E6533C;
+    border-radius: 50%;
+    border: none;
+    width: 20%;
+}
+.diplay-box-over-image{
+    display: flex;
+    justify-content: center;
+    background: rgb(191, 80, 80);
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom:  100px;
+    border-radius: 20px;
+}
+.background{
+    background-color:rgba(27, 27, 27, 0.411);
+    padding:5px;
+  
+}
+.background>h3{
+    color: white;
 }
