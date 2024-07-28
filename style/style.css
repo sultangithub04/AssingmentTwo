@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 
-
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -18,7 +17,7 @@ body {
 
     box-sizing: border-box;
 }
-
+/* header-section start */
 header {
     background-image: linear-gradient(to right, black, rgb(15, 15, 15));
     padding-top: 40px;
@@ -183,7 +182,9 @@ header {
     color: white;
     font-weight: 700;
 }
+/* header-section end */
 
+/* change your habit section start */
 main, footer {
     background-color: black;
 }
@@ -223,7 +224,9 @@ h4 {
     padding-top: 100px;
 
 }
+/* change your habit section end */
 
+/* run and extr mile section start */
 .run-section {
     background-color: #222222;
     margin-top: 100px;
@@ -244,7 +247,9 @@ h4 {
     margin-bottom: 30px;
  
 }
+/* run and extr mile section end */
 
+/* bmi calculator  section start */
 .bmi-section-width {
     background-color: #222222;
     padding-top: 100px;
@@ -316,7 +321,9 @@ input {
     background-color:rgba(128, 128, 128, 0.474);
     border: none;
 }
+/* bmi calculator  section end */
 
+/* meet our team section start */
 .image-containers {
     background-color: rgba(128, 128, 128, 0.151);
     padding: 15px;
@@ -348,6 +355,9 @@ input {
     height: 272px;
     border-radius: 15px;
 }
+/* meet our team section start */
+
+/* footer section start */
 .footer-item{
     flex-basis: 45%;
     padding: 10px;
@@ -381,6 +391,9 @@ hr{
     padding-bottom: 10px;
     font-size:1.5rem;
 }
+/* footer section end */
+
+/* challenge section start here */
 .challenge-section{
 background-image: url(/images/chalange.jpg);
 background-repeat: no-repeat;
@@ -418,7 +431,9 @@ padding: 0px;
     display: flex;
     justify-content: space-between;
 }
+/* challenge section end here */
 
+/* responsive section  */
 
 @media screen and (max-width:576px) {
     .banner-section,
