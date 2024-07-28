@@ -412,7 +412,8 @@ padding: 0px;
 }
 .challenge-text>h1{
     color:rgba(255, 255, 255, 0.463);
-    font-size: 8rem;
+    font-size: 6rem;
+    padding: 50px 0px;
 }
 .challenge-text>h2{
     color:rgb(191, 80, 80);
