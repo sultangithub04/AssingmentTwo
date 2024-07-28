@@ -25,11 +25,15 @@ header {
 }
 
 .section-header-font {
-    font-size: 48px;
+    font-size: 3rem;
     color: white;
     padding-bottom: 20px;
 }
 
+#style-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
 .common-width {
     max-width: 1060px;
     margin: 0 auto;
@@ -42,7 +46,7 @@ header {
 
 .nav-left>h3 {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 2.2rem;
     font-style: italic;
     color: #E6533C;
 }
@@ -57,25 +61,25 @@ header {
 
 .list-item {
     display: flex;
-}
-
-.list-item {
+    align-items: center;
     list-style-type: none;
     border: 1px solid #909090;
-    padding: 10px 5px;
+    padding: 5px 5px;
     border-radius: 20px;
 }
 
 .list-item>li>a {
-    font-size: 18px;
+    font-size: 1.13;
     text-decoration: none;
     color: white;
-    padding: 7px 20px;
+    padding: 0px 20px;
     border-radius: 20px;
 }
 
-.list-item>li>a:hover {
+.list-item>li:nth-of-type(1) {
     background-color: #E6533C;
+    padding: 7px 20px;
+    border-radius: 20px;
 }
 
 .banner-section {
@@ -85,7 +89,7 @@ header {
 }
 
 .banner-left>h1 {
-    font-size: 78px;
+    font-size: 4.8rem;
     color: white;
     padding-top: 100px;
     padding-bottom: 50px;
@@ -137,7 +141,7 @@ header {
     justify-content: center;
     background: rgb(191, 80, 80);
     width: 190px;
-    height: 100px;
+    height: 90px;
     position: absolute;
     bottom: 60px;
     left: 0px;
@@ -182,14 +186,10 @@ h4 {
 
 .image-card {
     width: 231px;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: none;
     text-align: center;
-    margin-bottom: 20px;
-    border: 1px solid rebeccapurple;
 }
 
 .image-card img {
@@ -204,7 +204,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    border: 1px solid red;
+    gap: 30px;
 }
 
 .card-section-text {
@@ -237,6 +237,7 @@ h4 {
 
 .bmi-section-width {
     background-color: #222222;
+    padding-top: 100px;
 }
 
 table {
@@ -264,7 +265,7 @@ td {
 
 .bmi-section-header-text {
     color: white;
-    font-size: 28px;
+    font-size: 1.75rem;
     padding: 20px 0px;
 
 }
@@ -278,27 +279,32 @@ form {
 }
 
 input {
-    width: 48%;
+    width: 46%;
     padding: 8px;
     margin: 5px;
     border-radius: 5px;
-
-
+    background-color:rgba(128, 128, 128, 0.474);
+    border: none;
 }
-
+::placeholder, select{
+    color: #909090;
+}
 .select-btn {
-    width: 98%;
+    width: 94%;
     padding: 8px;
     margin: 5px;
     border-radius: 5px;
+    background-color:rgba(128, 128, 128, 0.474);
+    border: none;
 }
 
 .select-btn1 {
     padding: 8px;
     margin-bottom: 5px;
-    width: 48%;
+    width: 46%;
     border-radius: 5px;
-    background-color:rgba(128, 128, 128, 0.885);
+    background-color:rgba(128, 128, 128, 0.474);
+    border: none;
 }
 
 .image-containers {
@@ -317,29 +323,41 @@ input {
     position: relative;
 
 }
-.image-contain>h4 {
+.image-contain>h4{
   position: absolute;
   bottom: 40px;
   left: 20px;
-
 }
-
+.image-contain>p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
 .image-contain img {
     width: 326px;
     height: 272px;
     border-radius: 15px;
 }
 .footer-item{
-    flex-basis: 30%;
+    flex-basis: 45%;
     padding: 10px;
-    margin-top: 50px;
 }
 
+.footer-item1>h3{
+    color: white;
+    padding: 7px;
+}
+.footer-item1>p{
+   padding: 7px;
+}
 .footer-m{
-    display: grid;
-    grid-template-columns:2fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+  padding-top: 50px;
+ 
 }
 hr{
+    border: .2px solid rgb(65, 59, 59);
     margin-bottom: 40px;
 }
 .footer-botom{
@@ -348,7 +366,23 @@ hr{
    margin: 0 auto;
    padding: 50px 0px;
 }
-
+.footer-item>h3{
+    color: white;
+    padding-bottom: 10px;
+    font-size:1.5rem;
+}
+.footer-item>h1{
+    color: white;
+    padding-bottom: 10px;
+    font-size: 4.37rem;
+    color: rgb(191, 80, 80);
+    font-weight: 700;
+    font-style: italic;
+}
+.get-started-footer{
+    display: flex;
+    justify-content: space-between;
+}
 
 @media screen and (max-width:576px) {
     .nav-bar {
@@ -384,5 +418,11 @@ hr{
     }
     .image-containers {
         grid-template-columns: 1fr;
+    }
+    .footer-m{
+        flex-direction: column;
+    }
+    .bmi-right {
+        padding-left: 10px;
     }
 }
